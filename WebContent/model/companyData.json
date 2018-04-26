@@ -1,0 +1,9 @@
+{
+  "companyInfo" : {
+             "name" : "SMAX",
+             "address" : {
+                "hno" : 405,
+                "city" : "Hyd"
+             }
+  }
+}
