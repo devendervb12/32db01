@@ -13,6 +13,11 @@ sap.ui.controller("zdb01.Company", {
        var oView =  this.getView();
        
        oView.setModel(oModel);
+       
+       //ref to text control
+       var otxt = this.getView().byId("idText");
+      
+       otxt.bindProperty("text", "/companyInfo/address/hno")
 	},
 
 /**

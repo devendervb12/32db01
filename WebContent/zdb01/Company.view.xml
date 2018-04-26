@@ -3,8 +3,8 @@
 	<Page title="Title">
 		<content>
 	         <Title text="{/companyInfo/name}"/>
-	         <Text text="{/companyInfo/address/hno}"/>
-	         
+	         <Text id="idText"/>
 		</content>
 	</Page>
 </core:View>
+
