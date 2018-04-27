@@ -6,18 +6,18 @@ sap.ui.controller("zdb01.Company", {
 * @memberOf zdb01.Company
 */
 	onInit: function() {
+		// created model instance
         var oModel = new sap.ui.model.json.JSONModel();
+        
+        //loaded data
         oModel.loadData("model/companyData.json");
         
         //get the refence of view
        var oView =  this.getView();
-       
+       //set model to view
        oView.setModel(oModel);
        
-       //ref to text control
-       var otxt = this.getView().byId("idText");
-      
-       otxt.bindProperty("text", "/companyInfo/address/hno")
+       
 	},
 
 /**

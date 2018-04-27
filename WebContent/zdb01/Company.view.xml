@@ -1,9 +1,16 @@
 <core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
 		controllerName="zdb01.Company" xmlns:html="http://www.w3.org/1999/xhtml">
-	<Page title="Title">
+	<Page title="Title" binding="{/companyInfo}">
 		<content>
-	         <Title text="{/companyInfo/name}"/>
-	         <Text id="idText"/>
+	         <Title text="{name}"/>
+	         <Text text="{address/hno}"/>
+	         <ComboBox binding="{departments}">
+	            <items>
+	               <core:Item text="{0/dept}"/>
+	               <core:Item text="{1/dept}"/>
+	               <core:Item text="{2/dept}"/>
+	            </items>
+	         </ComboBox>
 		</content>
 	</Page>
 </core:View>

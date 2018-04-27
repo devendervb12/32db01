@@ -4,6 +4,17 @@
              "address" : {
                 "hno" : 405,
                 "city" : "Hyd"
+             },
+             "departments" : [ 
+             { 
+              "dept" : "SAP"
+             },
+             { 
+              "dept" : "Oracle"
+             },
+             { 
+              "dept" : "Java"
              }
+             ]
   }
 }
